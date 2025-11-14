@@ -163,9 +163,9 @@ func gerarInimigoNormal(level: Int) -> [String: Any] {
         inimigo["isBoss"] = true
         inimigo["nome"] = "Boss \(nomeBase) \(emoji)"
         inimigo["level"] = level
-        inimigo["vidaMax"] = vidaComLevel * 1.5
-        inimigo["vidaAtual"] = vidaComLevel * 1.5
-        inimigo["dano"] = danoComLevel * 1.5
+        inimigo["vidaMax"] = vidaComLevel * 2
+        inimigo["vidaAtual"] = vidaComLevel * 2
+        inimigo["dano"] = danoComLevel * 2
     } else {
         inimigo["isBoss"] = false
         inimigo["nome"] = "\(nomeBase) \(emoji)"
