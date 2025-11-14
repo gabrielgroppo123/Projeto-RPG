@@ -18,28 +18,43 @@ Durante o jogo, você pode:
 ---
 
 ## 🎯 Como jogar
-1. Abra o arquivo `main.swift` em um compilador Swift ou ambiente compatível.  
-2. Execute o programa.  
-3. Escolha o nome do seu personagem.  
-4. Escolha a classe do seu personagem: Bárbaro 🪓, Espadachim 🗡️ ou Arqueiro 🏹.  
-5. Use o menu principal para:  
-   - **Batalhar ⚔️**: enfrente inimigos e chefes.  
-   - **Inventário 🎒**: equipar ou visualizar itens coletados.  
-   - **Loja 🏪**: comprar armas, armaduras ou poções.  
-   - **Status 📈**: conferir estatísticas do personagem.  
-   - **Sair 🚪**: encerrar o jogo.  
-6. Siga as instruções no console e aproveite a aventura!
+Para jogar, siga estes passos detalhados:  
+
+1. **Abrir o jogo**: abra o arquivo `main.swift` em um compilador Swift ou ambiente compatível (como Xcode ou algum compilador online).  
+2. **Executar o programa**: inicie a execução do código e acompanhe as instruções que aparecerão no console.  
+3. **Escolher o nome do personagem**: você poderá digitar o nome que quiser para o seu herói. Se não digitar nada, o nome padrão será "Herói".  
+4. **Escolher a classe do personagem**:  
+   - **Bárbaro 🪓**: mais vida, menos dano; ideal para quem quer resistir a muitos ataques.  
+   - **Espadachim 🗡️**: equilíbrio entre vida e dano; bom para quem quer um estilo versátil.  
+   - **Arqueiro 🏹**: menos vida, mais dano; perfeito para ataques rápidos e estratégicos.  
+5. **Interagir com o menu principal**:  
+   - **Batalhar ⚔️**: enfrente inimigos que aparecem aleatoriamente. Alguns inimigos podem ser chefes (bosses) mais fortes.  
+   - **Inventário 🎒**: visualize itens coletados e equipe armas ou armaduras para aumentar seu dano e defesa.  
+   - **Loja 🏪**: compre novas armas, armaduras ou poções usando o ouro que você ganha nas batalhas.  
+   - **Status 📈**: confira detalhadamente a vida, dano total, defesa, ouro e equipamentos do seu personagem.  
+   - **Sair 🚪**: encerre o jogo quando quiser.  
+6. **Batalhas e estratégia**: durante os combates, você atacará os inimigos e receberá ataques de volta. Use poções para recuperar vida e planeje qual item equipar para maximizar suas chances de vitória.  
+7. **Morte e renascimento ⚡**: se seu personagem morrer, ele renasce com a vida cheia, mas perde todo o ouro. O inimigo que matou você continuará esperando para que você possa enfrentá-lo novamente.  
+
+> Dica: acumule equipamentos e ouro para evoluir seu personagem e enfrentar inimigos cada vez mais fortes!
 
 ---
 
 ## 🔧 Como o código funciona
-O jogo é construído de forma simples e didática, usando conceitos básicos de Swift:  
-- **Variáveis e dicionários**: armazenam informações sobre personagem, inimigos, armas, armaduras e poções.  
-- **Funções**: organizam ações como batalhas, compra de itens, equipamento e geração de inimigos.  
-- **Laços de repetição e condicionais**: permitem a interação contínua com o menu, verificando escolhas válidas do jogador.  
-- **Randomização**: inimigos e algumas recompensas são gerados de forma aleatória, garantindo partidas diferentes a cada jogo.  
-- **Sistema de renascimento**: quando o personagem morre, ele retorna com a vida cheia e perde apenas o ouro acumulado.
+O código é organizado de forma simples e didática, usando conceitos básicos de Swift. Aqui está uma explicação detalhada de cada parte:  
 
+1. **Variáveis e dicionários**: armazenam informações sobre o personagem (vida, dano, classe, ouro), itens (armas, armaduras, poções) e inimigos (nome, vida, dano, se é chefe).  
+2. **Funções**: cada ação do jogo é organizada em funções, como:  
+   - `batalhar()`: realiza o combate com inimigos, calcula danos e verifica se o personagem ou o inimigo morreu.  
+   - `abrirLoja()`: mostra os itens disponíveis, permite comprar armas, armaduras e poções.  
+   - `mostrarInventario()` e `equiparItem()`: exibem e permitem equipar os itens que o jogador possui.  
+   - `mostrarStatus()`: imprime todas as estatísticas do personagem no console.  
+3. **Laços de repetição e condicionais**: o menu principal é exibido em loop até o jogador escolher sair, permitindo múltiplas ações. Condicionais são usadas para verificar escolhas válidas do jogador e para definir o resultado de combates.  
+4. **Randomização**: inimigos e algumas recompensas são gerados aleatoriamente. Isso garante que cada partida seja diferente, com inimigos e níveis variados.  
+5. **Sistema de renascimento**: quando o personagem morre, ele renasce com a vida cheia, mas perde todo o ouro. O inimigo que matou o jogador continua esperando para que ele possa enfrentá-lo novamente, adicionando desafio ao jogo.  
+6. **Integração de itens e equipamentos**: armas e armaduras adicionam valor ao dano e defesa do personagem, enquanto poções recuperam vida instantaneamente. O jogador deve decidir estrategicamente quando usar cada item.  
+
+> O código é ideal para quem está aprendendo Swift e quer ver como funções, dicionários, loops e condições podem ser aplicados em um projeto de RPG real.
 
 ---
 
