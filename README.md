@@ -36,7 +36,6 @@ Para jogar, siga estes passos detalhados:
 6. **Batalhas e estratégia**: durante os combates, você atacará os inimigos e receberá ataques de volta. Use poções para recuperar vida e planeje qual item equipar para maximizar suas chances de vitória.  
 7. **Morte e renascimento ⚡**: se seu personagem morrer, ele renasce com a vida cheia, mas perde todo o ouro. O inimigo que matou você continuará esperando para que você possa enfrentá-lo novamente.  
 
-> Dica: acumule equipamentos e ouro para evoluir seu personagem e enfrentar inimigos cada vez mais fortes!
 
 ---
 
@@ -54,7 +53,6 @@ O código é organizado de forma simples e didática, usando conceitos básicos 
 5. **Sistema de renascimento**: quando o personagem morre, ele renasce com a vida cheia, mas perde todo o ouro. O inimigo que matou o jogador continua esperando para que ele possa enfrentá-lo novamente, adicionando desafio ao jogo.  
 6. **Integração de itens e equipamentos**: armas e armaduras adicionam valor ao dano e defesa do personagem, enquanto poções recuperam vida instantaneamente. O jogador deve decidir estrategicamente quando usar cada item.  
 
-> O código é ideal para quem está aprendendo Swift e quer ver como funções, dicionários, loops e condições podem ser aplicados em um projeto de RPG real.
 
 ---
 
